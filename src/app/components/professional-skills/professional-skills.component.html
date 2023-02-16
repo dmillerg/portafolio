@@ -1,0 +1,76 @@
+<div class="w-full h-fit p-4">
+    <h1 class="text-slate-900 text-xl font-bold dark:text-white">
+        Habilidades Profesionales
+    </h1>
+
+    <div class="flex w-full h-fit lg:flex-row flex-col lg:justify-between justify-center  gap-4">
+        <div class="flex-1 mt-4">
+            <div class="h3 text-md font-semibold text-slate-900 dark:text-slate-400 mb-8 p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg">
+                Frontend</div>
+            <div class="w-full grid grid-cols-1 gap-8">
+                <!-- <div *ngFor="let item of frontend" class="flex flex-col justify-center items-center">
+                    <img class="drop-shadow-xl" [src]="item.img">
+                    <p class="text-sm text-zinc-700 dark:text-zinc-200">{{item.language}}</p>
+                </div> -->
+                <div *ngFor="let item of frontend" class="flex w-full gap-4">
+                    <div class="flex-none w-2/6">
+                        <img class="drop-shadow-xl" [src]="item.img">
+                    </div>
+                    <div class="flex-1 relative">
+                        <p class="text-sm text-zinc-700 dark:text-zinc-200">{{item.language}}</p>
+                        <p class="text-xs text-zinc-700 dark:text-zinc-400 line-clamp-3">{{item.descripcion}}</p>
+                        <br>
+                        <div class="absolute -top-4 right-2 rounded-full text-indigo-600 text-xs">3 annos de experiencia
+                        </div>
+                        <a [href]="item.site"
+                            class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-zinc-800 dark:border-zinc-700 dark:text-gray-300 dark:shadow-md dark:hover:text-zinc-100 dark:hover:bg-zinc-700  transition-all duration-300">Visitar
+                            sitio oficial</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 mt-4">
+            <div class="h3 text-md font-semibold text-slate-900 dark:text-slate-400 mb-8 p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg">Backend</div>
+            <div class="w-full grid grid-cols-1 gap-8">
+                <div *ngFor="let item of backend" class="flex w-full gap-4">
+                    <div class="flex-none w-2/6">
+                        <img class="drop-shadow-xl" [src]="item.img">
+                    </div>
+                    <div class="flex-1 relative">
+                        <p class="text-sm text-zinc-700 dark:text-zinc-200">{{item.language}}</p>
+                        <p class="text-xs text-zinc-700 dark:text-zinc-400 line-clamp-3">{{item.descripcion}}</p>
+                        <br>
+                        <div class="absolute -top-4 right-2 rounded-full text-indigo-600 text-xs">3 annos de experiencia
+                        </div>
+                        <a [href]="item.site"
+                            class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-zinc-800 dark:border-zinc-700 dark:text-gray-300 dark:shadow-md dark:hover:text-zinc-100 dark:hover:bg-zinc-700  transition-all duration-300">Visitar
+                            sitio oficial</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 mt-4">
+            <div class="h3 text-md font-semibold text-slate-900 dark:text-slate-400 mb-8 p-4 bg-zinc-100 dark:bg-zinc-800 rounded-lg">Móvil</div>
+            <div class="w-full grid grid-cols-1 gap-8">
+                <div *ngFor="let item of movil" class="flex w-full gap-4">
+                    <div class="flex-none w-2/6">
+                        <img class="drop-shadow-xl" [src]="item.img">
+                    </div>
+                    <div class="flex-1 relative">
+                        <p class="text-sm text-zinc-700 dark:text-zinc-200">{{item.language}}</p>
+                        <p class="text-xs text-zinc-700 dark:text-zinc-400 line-clamp-3">{{item.descripcion}}</p>
+                        <br>
+                        <div class="absolute -top-4 right-2 rounded-full text-indigo-600 text-xs">3 annos de experiencia
+                        </div>
+                        <a [href]="item.site"
+                            class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-zinc-800 dark:border-zinc-700 dark:text-gray-300 dark:shadow-md dark:hover:text-zinc-100 dark:hover:bg-zinc-700  transition-all duration-300">Visitar
+                            sitio oficial</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

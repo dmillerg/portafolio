@@ -1,0 +1,77 @@
+<div class="container mx-auto p-8 relative">
+
+    <div class="flex justify-between items-center rounded-full absolute top-4 right-2 h-fit shadow-lg">
+        <button class="p-4 bg-transparent flex dark:text-zinc-100" (click)="theme()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 transition-all duration-500" [ngClass]="{'hidden':storage.retrieve('theme')=='light', 'flex':storage.retrieve('theme')=='dark'}">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 transition-all duration-500" [ngClass]="{'hidden':storage.retrieve('theme')=='dark', 'flex':storage.retrieve('theme')=='light'}">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+              </svg>
+              
+        </button>
+    </div>
+
+    <div class="flex w-full h-fit gap-4">
+        <div class="flex-1 lg:flex-none w-1/6">
+            <div class="bg-transparent rounded-lg justify-center flex">
+                <img class="object-fill h-64 w-full" src="assets/cv-daniel-perfil.png">
+            </div>
+        </div>
+        <div class="flex-1 flex flex-col justify-center items-center ">
+            <h1 class="font-bold text-7xl w-full text-start dark:text-white">Daniel</h1>
+            <h3 class="font-bold text-5xl w-full text-start dark:text-white">Miller González</h3>
+            <p class="text-gray-500 dark:text-gray-400  font-bold text-md w-full text-start">Ingeniero informático y
+                programador web</p>
+            <p class="text-md text-gray-500 dark:text-gray-400  mt-2 lg:flex hidden">
+                Como ingeniero informático y programador web en particular, siempre estoy dispuesto a formar parte de
+                equipos de trabajo en los que pueda fomentar y aplicar conocimientos y experiencias adquiridos hasta el
+                momento. Siempre cuento con la mejor disposición para aprender y ayudar en la solución de problemas que
+                puedan surgir durante y después del proceso de desarrollo.
+            </p>
+        </div>
+    </div>
+    <p class="text-md text-gray-500 dark:text-gray-400 mt-2 lg:hidden">
+        Como ingeniero informático y programador web en particular, siempre estoy dispuesto a formar parte de
+        equipos de trabajo en los que pueda fomentar y aplicar conocimientos y experiencias adquiridos hasta el
+        momento. Siempre cuento con la mejor disposición para aprender y ayudar en la solución de problemas que
+        puedan surgir durante y después del proceso de desarrollo.
+    </p>
+
+    <div class="flex justify-center items-center w-full h-fit my-8">
+        <div class="w-5/6 h-px bg-slate-300"></div>
+    </div>
+
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-2">
+
+        <!-- <div class="justify-center items-center">
+            <p-chart type="doughnut" [data]="data" [options]="chartOptions">
+            </p-chart>
+        </div>
+        <div class="justify-center items-center">
+            <p-chart type="doughnut" [data]="data" [options]="chartOptions">
+            </p-chart>
+        </div>
+        <div class="justify-center items-center">
+            <p-chart type="doughnut" [data]="data" [options]="chartOptions">
+            </p-chart>
+        </div>
+        <div class="justify-center items-center">
+            <p-chart type="doughnut" [data]="data" [options]="chartOptions">
+            </p-chart>
+        </div> -->
+        <div class="rounded-lg px-4 ">
+            <app-education></app-education>
+        </div>
+        <div class="rounded-lg px-4 ">
+            <app-skills></app-skills>
+        </div>
+        <div class="rounded-lg px-4">
+            <app-experiences></app-experiences>
+        </div>
+        <div class="rounded-lg px-4 col-span-1 md:col-span-2 lg:col-span-3">
+            <app-professional-skills></app-professional-skills>
+        </div>
+    </div>
+</div>

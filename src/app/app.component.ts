@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portafolio-daniel';
+
+  click() {
+    if(document.getElementById('da')?.classList.contains('dark')){
+      document.getElementById('da')?.classList.remove('dark');
+    }else{
+      document.getElementById('da')?.classList.add('dark');
+    }
+    
+  }
 }
+
+
